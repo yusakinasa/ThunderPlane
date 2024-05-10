@@ -48,6 +48,7 @@ public class BossHP : MonoBehaviour
         laserCount = 0;
     }
 
+    //µ±Ç°ÑªÁ¿
     private void Update()
     {
         bossHPBar.value = bossHP;
