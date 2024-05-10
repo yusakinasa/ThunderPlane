@@ -49,6 +49,7 @@ public class Enemy : MonoBehaviour
         buffNum = 1;
     }
 
+    //敌机地图限制
     private void FixedUpdate()
     {
         EnemyMove();
@@ -142,7 +143,7 @@ public class Enemy : MonoBehaviour
     {
         if (!FindObjectOfType<PlayingManager>().isBossSpawn)
         {
-            if (Random.Range(1, 21) == 1 || (this.score / this.buffNum > 30))//二十分之一的概率,或者分数和buff数比例超过30 : 1(倒霉蛋)
+            if (Random.Range(1, 3) == 1 || (this.score / this.buffNum > 30))//将近三分之一的概率,或者分数和buff数比例超过30 : 1(倒霉蛋)
             {
                 buffNum += 1;
                 //生命值不满的情况下只会掉落回血Buff
@@ -150,6 +151,7 @@ public class Enemy : MonoBehaviour
                 {
                     Instantiate(BuffList[2], transform.position, transform.rotation);
                 }
+                //随机生成三种道具
                 else
                 {
                     Instantiate(BuffList[Random.Range(0, 2)], transform.position, transform.rotation);

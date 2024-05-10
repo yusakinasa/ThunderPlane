@@ -15,6 +15,7 @@ public class Buff : MonoBehaviour
     //当前Buff名
     public string buffName { get; private set; }
 
+    //初始化
     private void Start()
     {
         this.buffName = this.gameObject.tag;
@@ -24,6 +25,7 @@ public class Buff : MonoBehaviour
         mapMinY = FindObjectOfType<Utils>().getMapMinY();
     }
 
+    //修改更新
     private void FixedUpdate()
     {
         BuffMove();
@@ -52,6 +54,7 @@ public class Buff : MonoBehaviour
         this.speed = speed;
     }
 
+    //buff类型
     public void BuffIt()
     {
         switch (buffName)
@@ -68,6 +71,7 @@ public class Buff : MonoBehaviour
         }
     }
 
+    //buff生效
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
