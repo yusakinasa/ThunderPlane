@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//敌方战机爆炸
 public class EnemyBoom : MonoBehaviour
 {
     //音源组件
