@@ -47,6 +47,7 @@ public class Boss : MonoBehaviour
         unHurt = true;//开局时Boss尚未就位，血条不出现，为无敌状态
     }
 
+    //初始化
     private void Update()
     {
         if (isMove)
@@ -56,6 +57,7 @@ public class Boss : MonoBehaviour
         FireCold();
     }
 
+    //boss移动
     private void BossMove()
     {
         //还未到达指定高度时先纵向移动

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//boss±¬Õ¨
 public class BossBoom : MonoBehaviour
 {
     //ÒôÔ´×é¼þ

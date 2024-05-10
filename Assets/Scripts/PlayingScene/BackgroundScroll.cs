@@ -16,11 +16,13 @@ public class BackgroundScroll : MonoBehaviour
     public float moveSpeed;
     private SpriteRenderer render;
 
+    //初始化
     void Start()
     {
         render = GetComponent<SpriteRenderer>();
     }
 
+    //初始化
     void Update()
     {
         BgScroll();
