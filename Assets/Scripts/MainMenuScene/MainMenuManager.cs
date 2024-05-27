@@ -39,7 +39,7 @@ public class MainMenuManager : MonoBehaviour
         {
             if (SceneManager.GetActiveScene().name == "MainMenu")
             {
-                SceneManager.LoadScene("Playing");
+                SceneManager.LoadScene("levelSelection");
             }
         }
     }
